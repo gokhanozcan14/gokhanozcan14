@@ -1,90 +1,55 @@
-#baslik
-{
-    background-color: rgb(214, 166, 216);
-    margin: 10 auto;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssDosyalari/ilgiAlanlarim.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jsDosyalari/myScript.js"></script>
+    <title>İLGİ ALANLARIM</title>
+</head>
+<body style="background-color:rgb(218, 216, 216);">
 
-}
-#yazi
-{
-  background-color:  rgb(220, 199, 221);
-  margin: 10 auto;
-  color: white;
-  text-align: center;
-  padding-top: 10px;
-}
-
-#button
-{
-  
-  background-color: whitesmoke;
-}
-
-#title 
-{
-  margin-top: 30px;
-  width: 50%;
-}
-#artist
-{
-  width: 50%;
-}
-#output
-{
-  text-align: center;
-  margin-top: 10px;
-}
-.topnav {
-    background-color: rgb(220, 199, 221);
-    overflow: hidden;
+    <div class="container-fluid">   
+        <div class="row" >
+            <div class="row"  >
+                    <div class="topnav" id="myTopnav">
+                        <a href="iletisimSayfasi.html">İLETİŞİM</a>
+                        <a href="girisSayfasi.html">GİRİŞ</a>
+                        <a href="ilgiAlanlarim.html"class="active">İLGİ ALANLARIM</a>
+                        <a href="mirasimiz.html" >MİRASIMIZ</a>
+                        <a href="sehrim.html"   >ŞEHRİM</a>
+                        <a href="ozgecmisim.html" >ÖZGEÇMİŞİM</a>
+                        <a href="index.html" >HAKKIMDA</a>
+                        </a>
+                  </div>
     
-  }
-  .topnav a {
-    float:right;
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    
-  }
-  
-  #myTopnav
-  {
-      margin-top: 20px;
-      margin-left: 10px;
-  }
-
-  .topnav a:hover {
-    background-color: rgb(214, 166, 216);
-    color: white;
-  }
-  
-  .topnav a.active {
-    background-color: rgb(214, 166, 216);
-    color: white;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    
-    .topnav a
-    {
-      float:left;
-      margin-left: 20px;
-    }
-    #video
-    {
-      width: 400px;
-      height: 250px;
-    }
-  }
-  @media screen and (max-width: 1300px) {
-    
-    #video
-    {
-      width: 400px;
-      height: 250px;
-    }
-  }
+            </div>
+        </div>
+        <div class="row" id="baslik"> 
+            
+            <p><h4>İLGİ ALANLARIM</h4></p>
+            
+        </div>
+        <div class="row" id="yazi"> 
+            
+            <p>İlgi alanlarımdan biri şarkılar. Yabancı pop şarkıları dinlemeyi çok severim.</p><br>
+            <p>Siz de aşağıdan istediğiniz şarkı adı ve şarkıcı ile arama yapabilir,yan tarafta da en sevdiğim şarkılardan üçünü bulabilirsiniz.</p>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <input id="title" class="form-control" placeholder="Şarkı Adı"><br><br>
+                <input id="artist"  class="form-control" placeholder="Şarkıcı"><br><br>
+                <button id="button" onclick="sarkiBul()">Şarkı Sözü Bul</button><br><br>
+            </div>
+            <div class="col-lg-5 embed-responsive embed-responsive-16by9"> 
+                <iframe class="responsive-iframe" id="video" width="561" height="314" src="https://www.youtube.com/embed/videoseries?list=PLys4dC6JOuUSvZGROs6bX1YywZJnsijMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    <div id="output">
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssDosyalari/iletisim.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <title>İLETİŞİM</title>
+</head>
+<body style="background-color:rgb(218, 216, 216);">
+    <div class="container-fluid">   
+        <div class="row" >
+            <div class="row"  >
+                    <div class="topnav" id="myTopnav">
+                        <a href="iletisim.html" class="active">İLETİŞİM</a>
+                        <a href="girisSayfasi.html">GİRİŞ</a>
+                        <a href="ilgiAlanlarim.html">İLGİ ALANLARIM</a>
+                        <a href="mirasimiz.html" >MİRASIMIZ</a>
+                        <a href="sehrim.html"   >ŞEHRİM</a>
+                        <a href="ozgecmisim.html" >ÖZGEÇMİŞİM</a>
+                        <a href="index.html" >HAKKIMDA</a>
+                        </a>
+                  </div>
+    
+            </div>
+            
+        </div>
+        <div class="row" id="baslik" >
+                <h4>
+                    İLETİŞİM
+                </h4>
+            
+        </div>
+
+        <div class="row"  >
+            
+            <form action="iletisim.php" method="POST" onsubmit="return boslukKontrol()" >
+
+                <div class="row" style="margin-top: 50px;" >
+                    <div class="col-md-6 basliklar"  >
+                      <label for="isim" >İSMİNİZ:</label>
+                    </div>
+                    <div class="col-md-6 " >
+                      <input type="text" id="isim" name="isim"  >
+                     
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 basliklar"  >
+                      <label for="soyisim">SOYİSMİNİZ:</label>
+                    </div>
+                    <div class="col-md-6" >
+                      <input type="text" id="soyisim" name="soyisim" placeholder="Your name..">
+                      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 basliklar"  >
+                      <label for="email">E-MAİL ADRESİNİZ:</label>
+                    </div>
+                    <div class="col-md-6" >
+                      <input type="text" id="email" name="email" placeholder="E-mail">
+                      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 basliklar"  >
+                      <label for="ziyaret">MUĞLA'YI DAHA ÖNCE ZİYARET ETTİNİZ Mİ?</label>
+                    </div>
+                    <div class="col-md-6" id="ziyaret">
+                        
+                        <input type="radio" name="ziyaret" value="evet" id="evet"  >ETTİM |
+                        <input type="radio" name="ziyaret" value="hayir" id="hayir"    >ETMEDİM
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md basliklar" style="text-align: center;" >
+                      <label for="ilce">ETTİYSENİZ HANGİ İLÇELERİ ZİYARET ETTİNİZ?</label><br>
+                      <label for="ilce">ETMEDİYSENİZ HANGİ İLÇELERİ ZİYARET ETMEK İSTERDİNİZ?</label>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md" style="text-align: center;" id="checkbox">
+                        <input type="checkbox" name="bodrum"  id="1"  >BODRUM|
+                        <input type="checkbox" name="dalaman"   id="2">DALAMAN|
+                        <input type="checkbox" name="datca" id="3">DATÇA|
+                        <input type="checkbox" name="fethiye"  id="4">FETHİYE|
+                        <input type="checkbox" name="kavaklidere"  id="5">KAVAKLIDERE|
+                        <input type="checkbox" name="koycegiz"  id="6">KÖYCEĞİZ|
+                        <input type="checkbox" name="marmaris"  id="7">MARMARİS|
+                        <input type="checkbox" name="mentese" id="8">MENTEŞE|
+                        <input type="checkbox" name="milas"  id="9">MİLAS|
+                        <input type="checkbox" name="ortaca" id="10">ORTACA|
+                        <input type="checkbox" name="seydikemer"  id="11">SEYDİKEMER|
+                        <input type="checkbox" name="ula"  id="12">ULA|
+                        <input type="checkbox" name="yatagan"  id="13">YATAĞAN|
+                        
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md basliklar" style="text-align: center;" >
+                        <label for="yolculuk">MUĞLA'YA YOLCULUKTA HANGİ ULAŞIM ARACINI TERCİH EDERSİNİZ?</label>
+                      </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md basliklar" style="text-align: center;" >
+                        <select name="araclar" id="araclar">
+                            <option id="bos"></option>
+                            <option value="UCAK" id="14">UÇAK</option>
+                            <option value="OTOBUS" id="15">OTOBÜS</option>
+                            <option value="ARABA" id="16">ARABA</option>
+                            </select>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md basliklar" style="text-align: center;" >
+                      <label for="il">MUĞLA'YI GELİŞTİRMEK İÇİN FİKİRLERİNİZİ PAYLAŞINIZ.</label><br>
+                      <textarea id="il" name="il" rows="4" cols="50">YAZINIZ</textarea>
+                        
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md" style="text-align: center;">
+                        <button type="submit" >GÖNDER</button>
+                        <input type="reset" value="TEMİZLE" id="temizleButonu">
+                        
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    
+        <script src="jsDosyalari/formKontrol.js"></script>
+
+    </div>
+</body>
+</html>

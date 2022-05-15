@@ -1,1 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssDosyalari/giris.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <title>GİRİŞ</title>
+</head>
+<body style="background-color:rgb(218, 216, 216);">
 
+    <div class="container-fluid"> 
+        <div class="row" >
+            <div class="row"  >
+                    <div class="topnav" id="myTopnav">
+                        <a href="iletisimSayfasi.html">İLETİŞİM</a>
+                        <a href="giris.html" class="active">GİRİŞ</a>
+                        <a href="ilgiAlanlarim.html">İLGİ ALANLARIM</a>
+                        <a href="mirasimiz.html" >MİRASIMIZ</a>
+                        <a href="sehrim.html"   >ŞEHRİM</a>
+                        <a href="ozgecmisim.html" >ÖZGEÇMİŞİM</a>
+                        <a href="index.html" >HAKKIMDA</a>
+                        </a>
+                  </div>
+    
+            </div>
+        </div>
+        <div class="row" id="baslik">
+            <p><h4>GİRİŞ</h4></p>
+        </div>
+
+        <div class="row" >
+            <center>
+            <form method="POST" action="giris.php">
+                <input type="text" placeholder="Kullanıcı Adınız:" name="kullaniciAdi" id="email" required><br><br>
+                <input type="text" placeholder="Şifreniz:" name="sifre" required><br><br>
+                <button type="submit"  class="btn btn-outline-warning" name="gonder" >GÖNDER</button><br>
+
+            </form>
+            </center>
+            
+            
+        </div>
+        <div class="row" >
+            
+        </div>
+    </div>
+</body>
+</html>
